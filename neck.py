@@ -56,7 +56,7 @@ extend_to_24(fretboard_sharps)
 extend_to_24(fretboard_flats)
 
 print(c.HEADER, "The fretboard", c.ENDC)
-for x in fretboard_sharps:
+for i,x in enumerate(fretboard_sharps):
     print(x)
 
 def prepare_questions(nr=parsed_opts.Q+1, fretboard=fretboard_sharps, findall=parsed_opts.F):
