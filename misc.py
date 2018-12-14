@@ -11,7 +11,7 @@ def build_parser():
                         help="Instead of notes -> numbers, numbers -> notes", type=bool, default=False)
     parser.add_argument("-F", "--findall", action="store", dest="F",
                         help="Find all instances along the neck", type=bool, default=False)
-    parser.add_argument("-C", "--chords", action="store", nargs="+", choices=["Maj", "Min", "Maj7", "Min7", "7", "Dim", "Aug"],
+    parser.add_argument("-C", "--chords", action="store", nargs="+", choices=["Maj", "Min", "Maj7", "Min7", "7", "Dim", "Aug", "Maj9", "Min9", "9"],
                         dest="C", help="Train chords")
     parser.add_argument("-S", "--scales", action="store", nargs="+", choices=["major", "ionian", "dorian", "phrygian", "lydian", "mixolydian", "minor", "aeolian", "locrian"],
                         dest="S", help="Train scales")
